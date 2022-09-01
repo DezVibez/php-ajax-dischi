@@ -20,17 +20,37 @@
 <body>
 
     <div id="root">
-        <div class="container">
-            <div class="card-container">
-                <div v-for="(disco, index) in dischi" :key="index" class="card">
-                    <span>{{disco.title}}</span>
-                    <span>{{disco.author}}</span>
-                    <span>{{disco.year}}</span>
-                    
+
+        <header>
+
+        </header>
+
+        <main>
+
+            <div class="container">
+                <div class="card-container">
+                    <div v-for="(disco, index) in dischi" :key="index" class="card">
+                        
+                        <img :src="disco.poster" alt="">
+                        <span class="title">{{disco.title}}</span>
+                        <span class="author">{{disco.author}}</span>
+                        <span class="year">{{disco.year}}</span>
+                        <span class="genre">{{disco.genre}}</span>
+                        
+                        
+                        
+                    </div>
                 </div>
+        
             </div>
-    
-        </div>
+        </main>
+
+
+
+
+        <footer>
+        
+        </footer>
 
     </div>
 

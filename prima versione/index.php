@@ -59,22 +59,34 @@ $discs = [
 </head>
 <body>
 
-    <div class="container">
-        <div class="card-container" >
-            <?php foreach($discs as $disc) { ?>
+    <header>
 
-                <div class="card">
-                    <?php echo $disc['title'] ?>
-                    <?php echo $disc['author'] ?>
-                    <?php echo $disc['year'] ?>
-                <img src="<?php echo $disc['poster'] ?>" alt="">
-                    <?php echo $disc['genre'] ?>
-                </div>
+    </header>
 
-            <?php }?>
+    <main>
+
+        <div class="container">
+            <div class="card-container" >
+                <?php foreach($discs as $disc) { ?>
+    
+                    <div class="card">
+                        <img src="<?php echo $disc['poster'] ?>" alt="">
+                        <span class="title"> <?php echo $disc['title'] ?> </span>   
+                        <span class="author">    <?php echo $disc['author'] ?> </span>
+                        <span class="year">    <?php echo $disc['year'] ?> </span>
+                        <span class="genre">    <?php echo $disc['genre'] ?> </span>
+                    </div>
+    
+                <?php }?>
+            </div>
+    
         </div>
+    </main>
 
-    </div>
+
+    <footer>
+
+    </footer>
     
     
 </body>

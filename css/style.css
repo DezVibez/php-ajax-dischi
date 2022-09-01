@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+header{
+    background-color: rgb(46,58,70);
+    height: 50px;
+}
+
+main{
+    background-color: rgb(30,45,59);
+    height: 100vh;
+    padding-top: 100px;
+    
+}
+
 
 .card-container{
     display: flex;
@@ -17,11 +29,30 @@
 }
 
 .card {
-    width: 10%;
+    color: white;
+    width: 15%;
     height: auto;
-    border: 1px solid black;
+    text-align: center;
+    padding: 7px;
+    background-color: rgb(46,58,70);
+    
 }
 
+.card .title{
+
+}
+
+.card .author{
+    
+}
+
+.card .year{
+    
+}
+
+.card .genre{
+    
+}
 .card img{
     width: 100%;
 }
