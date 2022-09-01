@@ -6,8 +6,9 @@ const app = new Vue({
     dischi: [],
  },
  mounted(){
-    axios.get('http://localhost:8888/api/index.php').then((res)=>{
+    axios.get('../api/dischi.php').then((res)=>{
     this.dischi = res.data
+    console.log(this.dischi)
     });
  }
 });
