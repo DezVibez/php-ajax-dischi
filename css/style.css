@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 65%;
+}
+
+.card {
+    width: 10%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.card img{
+    width: 100%;
+}
