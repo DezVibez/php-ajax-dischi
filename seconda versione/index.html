@@ -22,7 +22,12 @@
     <div id="root">
         <div class="container">
             <div class="card-container" >
-                <h1>ciao</h1>
+                <div v-for="(disco, index) in dischi" :key="index" class="card">
+                    <span>{{disco.title}}</span>
+                    <span>{{disco.author}}</span>
+                    <span>{{disco.year}}</span>
+                    
+                </div>
             </div>
     
         </div>
